@@ -34,15 +34,15 @@ export default function Home() {
 				<div className="otp-container">
 					{otp.map((digit, index) => (
 						<input
-							key={index}
-							className="otp-input"
-							type="text"
-							maxLength={1}
-							value={digit}
-							autoFocus={index === 0}
-							ref={(ref) => (inputRef.current[index] = ref)}
-							onChange={(e) => handleChange(index, e.target.value)}
-							onKeyDown={(e) => handleKeyDown(index, e)}
+							key = {index}
+							className = "otp-input"
+							type = "text"
+							maxLength = {1}
+							value = {digit}
+							autoFocus = {index === 0}
+							ref = {(ref) => (inputRef.current[index] = ref)}
+							onChange = {(e) => handleChange(index, e.target.value)}
+							onKeyDown = {(e) => handleKeyDown(index, e)}
 						/>
 					))}
 				</div>
